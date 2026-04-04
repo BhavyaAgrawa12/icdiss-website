@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact & Venue | ICICFT 2026</title>
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <style>
+      body {
+        animation: fadePage 0.8s ease-in-out;
+      }
+
+      @keyframes fadePage {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .fade-section {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease;
+      }
+
+      .fade-section.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .modern-card {
+        transition: all 0.35s ease;
+        background: white;
+      }
+
+      .modern-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+      }
+
+      .contact-card {
+        background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+        border-radius: 18px;
+        padding: 40px;
+        transition: all 0.35s ease;
+      }
+
+      .contact-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px rgba(79, 70, 229, 0.25);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- HERO -->
+    <section class="pt-20 pb-8 bg-gray-100 fade-section">
+      <div class="max-w-5xl mx-auto px-6 relative">
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+          <div class="slider relative w-full h-72 md:h-[450px]">
+            <div
+              class="slide absolute inset-0 opacity-100 transition-opacity duration-1000"
+            >
+              <img
+                src="assets/images/building.avif"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+            >
+              <img
+                src="assets/images/poornima 3.webp"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+            >
+              <img
+                src="assets/images/footercover.webp"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div class="absolute inset-0 bg-black/10"></div>
+        </div>
+
+        <div
+          class="relative mt-8 w-fit mx-auto bg-white rounded-2xl shadow-lg px-12 py-6 text-center"
+        >
+          <h2 class="text-3xl md:text-5xl font-bold text-primary mb-2">
+            Contact & Venue
+          </h2>
+
+          <p class="text-gray-500">
+            Conference location and contact information
+          </p>
+
+          <div class="w-28 h-1 bg-yellow-500 mx-auto rounded-full mt-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-24 bg-gray-100 fade-section">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12 text-center">Contact Us</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="contact-card">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-8">Convener</h2>
+
+            <div class="mb-8">
+              <h3 class="font-semibold text-lg">Dr. Saurabh Shandilya</h3>
+
+              <p class="text-gray-600">Professor, PU, Jaipur</p>
+
+              <p class="text-sm text-gray-600 mt-2">
+                Faculty of Computer Science Engineering
+              </p>
+
+              <p class="text-sm text-indigo-700 mt-2 font-medium">
+                Email – saurabh.shandilya@poornima.edu.in
+              </p>
+
+              <p class="text-sm font-semibold mt-1">Mobile - +91-9887587811</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-lg">Dr. Udit Mamodiya</h3>
+
+              <p class="text-gray-600">Associate Professor, PU, Jaipur</p>
+
+              <p class="text-sm text-gray-600 mt-2">Head R&D Cell</p>
+
+              <p class="text-sm text-indigo-700 mt-2 font-medium">
+                Email – udit.mamodiya@poornima.edu.in
+              </p>
+
+              <p class="text-sm font-semibold mt-1">Mobile - +91-7014937762</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h2 class="text-2xl font-bold text-indigo-700 mb-8">Co-Convener</h2>
+
+            <div class="mb-8">
+              <h3 class="font-semibold text-lg">Dr. Sumit Kapoor</h3>
+
+              <p class="text-gray-600">Associate Professor, PU, Jaipur</p>
+
+              <p class="text-sm text-gray-600 mt-2">
+                Faculty of Computer Science Engineering
+              </p>
+
+              <p class="text-sm text-indigo-700 mt-2 font-medium">
+                Email – sumit.kapoor@poornima.edu.in
+              </p>
+
+              <p class="text-sm font-semibold mt-1">Mobile - +91-8006690016</p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-lg">Dr. Deepen Banoriya</h3>
+
+              <p class="text-gray-600">Professor, PU, Jaipur</p>
+
+              <p class="text-sm text-gray-600 mt-2">Member, R&D Cell</p>
+
+              <p class="text-sm text-indigo-700 mt-2 font-medium">
+                Email - deepen.banoriya@poornima.edu.in
+              </p>
+
+              <p class="text-sm font-semibold mt-1">Mobile - +91-7000542674</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUE SECTION -->
+    <section class="py-20 bg-white fade-section">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Location + Map -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+          <div class="modern-card p-8 rounded-2xl">
+            <h2 class="text-2xl font-bold text-primary mb-4">
+              Poornima University
+            </h2>
+            <p class="text-gray-600 mb-6">
+              ICICFT 2026 will be held at Poornima University, Jaipur — a
+              state-of-the-art educational institution equipped with modern
+              facilities for international conferences.
+            </p>
+
+            <div class="space-y-6">
+              <div>
+                <p class="font-semibold">Address</p>
+                <p class="text-sm text-gray-600">
+                  Plot No. IS-2027-2031, Ramchandrapura P.O. Vidhani Vatika
+                  Road, Sitapura, Rajasthan 303905
+                </p>
+              </div>
+
+              <div>
+                <p class="font-semibold">Phone</p>
+                <p class="text-sm text-gray-600">+91-9887587811</p>
+              </div>
+
+              <div>
+                <p class="font-semibold">Email</p>
+                <p class="text-sm text-gray-600">saurabh.shandilya@poornima.edu.in</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modern-card p-4 rounded-2xl">
+            <a
+              href="https://www.google.com/maps/place/Poornima+University/@26.7796222,75.8770182,17z/"
+              target="_blank"
+            >
+              <img
+                src="assets/images/map.png"
+                class="rounded-xl w-full object-contain hover:scale-105 transition duration-500"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Facilities -->
+        <h2 class="text-3xl font-bold mb-8">Venue Facilities</h2>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-16">
+          <div class="modern-card p-6 rounded-2xl">
+            <h3 class="font-semibold mb-4">Conference Facilities</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li>✓ Large auditorium for keynote sessions</li>
+              <li>✓ Multiple meeting rooms for parallel sessions</li>
+              <li>✓ High-speed WiFi</li>
+              <li>✓ Advanced audio-visual equipment</li>
+            </ul>
+          </div>
+
+          <div class="modern-card p-6 rounded-2xl">
+            <h3 class="font-semibold mb-4">Amenities</h3>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li>✓ On-campus dining</li>
+              <li>✓ Parking available</li>
+              <li>✓ Refreshment lounges</li>
+              <li>✓ Accessible facilities</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Travel -->
+        <h2 class="text-3xl font-bold mb-8">Getting to Jaipur</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="modern-card p-6 rounded-2xl">
+            <h3 class="font-semibold mb-3">By Air ✈️</h3>
+            <p class="text-sm text-gray-600 mb-3">
+              Jaipur International Airport (JAI) is well connected to major
+              cities.
+            </p>
+            <p class="text-xs text-gray-500">
+              Distance: ~13 km | Time: ~30 minutes
+            </p>
+          </div>
+
+          <div class="modern-card p-6 rounded-2xl">
+            <h3 class="font-semibold mb-3">By Rail 🚆</h3>
+            <p class="text-sm text-gray-600 mb-3">
+              Jaipur Railway Station connects to all major Indian cities.
+            </p>
+            <p class="text-xs text-gray-500">
+              Distance: ~12 km | Time: ~25 minutes
+            </p>
+          </div>
+
+          <div class="modern-card p-6 rounded-2xl">
+            <h3 class="font-semibold mb-3">By Road 🚘</h3>
+            <p class="text-sm text-gray-600 mb-3">
+              Excellent highway connectivity from Delhi and nearby states.
+            </p>
+            <p class="text-xs text-gray-500">
+              Delhi to Jaipur: ~260 km | ~4.5 hours
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("components/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          const placeholder = document.getElementById("footer-placeholder");
+          placeholder.innerHTML = data;
+
+          // Small delay so CSS applies first
+          setTimeout(() => {
+            const footer = placeholder.querySelector(".footer");
+            footer.classList.add("show-footer");
+          }, 100);
+        });
+    </script>
+
+    <script>
+      const slides = document.querySelectorAll(".slide");
+      let current = 0;
+
+      setInterval(() => {
+        slides[current].classList.remove("opacity-100");
+        slides[current].classList.add("opacity-0");
+
+        current = (current + 1) % slides.length;
+
+        slides[current].classList.remove("opacity-0");
+        slides[current].classList.add("opacity-100");
+      }, 4000);
+
+      const sections = document.querySelectorAll(".fade-section");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.15 },
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    </script>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICICFT 2026</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <style>
+      body {
+        animation: pageFade 0.8s ease-in-out;
+      }
+
+      @keyframes pageFade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .fade-section {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 0.9s ease;
+      }
+      .fade-section.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .smooth-card {
+        transition:
+          transform 0.4s ease,
+          box-shadow 0.4s ease;
+      }
+      .smooth-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+      }
+
+      .slider img {
+        transition: transform 6s ease;
+      }
+      .slider:hover img {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+    <div
+      id="noticeBar"
+      class="w-full bg-gradient-to-r bg-blue-800 text-white py-3 relative overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+        <!-- Left Section -->
+        <div class="flex items-center gap-4 overflow-hidden">
+          <span class="bg-white/20 px-4 py-1 rounded-full text-sm font-medium">
+            Notice
+          </span>
+
+          <!-- Notice Text Wrapper -->
+          <div class="relative w-[700px] max-w-[65vw] overflow-hidden">
+            <div
+              id="noticeSlider"
+              class="flex transition-transform duration-700 ease-in-out"
+            >
+              <div class="min-w-full flex items-center gap-2 text-sm">
+                <span>📢</span>
+                <span>Paper Submission Deadline: July 10, 2026</span>
+              </div>
+
+              <div class="min-w-full flex items-center gap-2 text-sm">
+                <span>🌟</span>
+                <span>ICICFT 2026 September 25–26, 2026</span>
+              </div>
+
+              <div class="min-w-full flex items-center gap-2 text-sm">
+                <span>🎓</span>
+                <span>Early Bird Registration: September 05, 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="flex items-center gap-4">
+          <!-- Dots -->
+          <div id="noticeDots" class="flex gap-2">
+            <span class="w-2 h-2 bg-white rounded-full opacity-100"></span>
+            <span class="w-2 h-2 bg-white rounded-full opacity-40"></span>
+            <span class="w-2 h-2 bg-white rounded-full opacity-40"></span>
+          </div>
+
+          <!-- Close -->
+          <button
+            id="closeNotice"
+            class="text-white text-lg hover:text-gray-300"
+          >
+            ×
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= HERO ================= -->
+    <section class="py-28 bg-gray-50 fade-section">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h1
+          class="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-6"
+        >
+          1<sup>st</sup> International Conference on Intelligent Computing and
+          Future Technologies <br />
+          (ICICFT 2026)
+        </h1>
+
+        <p class="text-xl md:text-xl text-primary font-semibold mb-10">
+          September 25–26 , 2026
+          <br />
+          <br>
+          Organizing by <br>Department of Computer Science and Engineering <br> Poornima University, Jaipur
+        </p>
+
+        <!-- Campus Image -->
+        <div class="relative rounded-xl overflow-hidden shadow-lg mb-10">
+          <div class="slider relative w-full h-72 md:h-96">
+            <div
+              class="slide absolute inset-0 opacity-100 transition-opacity duration-1000"
+            >
+              <img
+                src="/assets/images/building.avif"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+            >
+              <img
+                src="/assets/images/poornima 3.webp"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="slide absolute inset-0 opacity-0 transition-opacity duration-1000"
+            >
+              <img
+                src="/assets/images/footercover.webp"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Association Section -->
+        <div class="flex justify-center mb-10">
+          <div
+            class="bg-blue-50 border border-blue-200 px-10 py-6 rounded-3xl max-w-3xl w-full text-center shadow-md transition-all duration-300 hover:shadow-xl"
+          >
+            <h3 class="text-lg font-semibold text-primary mb-4">
+              In Association with
+            </h3>
+
+            <div class="text-gray-700 text-base leading-relaxed space-y-2">
+              <p> Rajasthan Council for Advanced Training (RCAT), Jaipur</p>
+              <p>
+                Research and Development Cell, Poornima University, Jaipur
+              </p>
+              <p>
+                Indian Knowledge System (IKS) Cell, Poornima University, Jaipur
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Publication Notice -->
+        <div
+          class="inline-block bg-blue-50 border border-blue-200 px-6 py-4 rounded-xl max-w-3xl w-full text-center shadow-md transition-all duration-300 hover:shadow-xl"
+        >
+          <p class="text-primary font-medium">
+            All accepted papers will be recommended for publication in Scopus Indexed
+            Conference Proceedings (Application sent for publication)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-24 bg-gray-200 fade-section">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Text -->
+        <div>
+          <h3 class="text-3xl font-bold mb-6">
+            About the ICICFT–2026 Conference
+          </h3>
+
+         <div class="text-gray-600 max-w-4xl mx-auto mb-16 text-lg leading-relaxed">
+
+  <p class="text-justify ">
+    We are pleased to announce the upcoming <strong>International
+    Conference on Intelligent Computing and Future Technologies (ICICFT-2026)</strong>,
+    which aims to promote high-quality research and real-world technological
+    impact through international collaboration. This conference will bring
+    together world-class researchers, academicians, industry experts, and
+    technology leaders to explore and discuss the latest developments and
+    innovations in the fields of Intelligent Computing and emerging digital
+    technologies.
+  </p>
+  <br>
+
+  <p class="text-justify">
+    The primary objective of <strong>ICICFT-2026</strong> is to create a global
+    platform where researchers and professionals from different parts of the
+    world can come together to exchange knowledge, present innovative research
+    findings, and build strong professional networks. Through such interactions,
+    the conference seeks to encourage meaningful collaborations and open new
+    opportunities for interdisciplinary research and technological innovation.
+  </p>
+
+</div>
+          <br />
+          <a
+            href="association"
+            class="inline-block bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+            >Read More</a
+          >
+        </div>
+
+        <!-- Image -->
+        <div>
+          <img
+            src="assets/images/conference.jpg"
+            class="rounded-2xl shadow-lg w-full object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section class="py-24 bg-white text-center fade-section">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">Conference Tracks</h2>
+
+        <p
+          class="text-justify text-gray-600 max-w-4xl mx-auto mb-16 text-lg leading-relaxed"
+        >
+          ICICFT-2026 features five major research tracks covering key areas of
+          intelligent computing, data science, cybersecurity, emerging
+          technologies, and real-world applications of AI across healthcare and
+          society.
+        </p>
+
+        <!-- Slider Container -->
+        <div class="relative max-w-xl mx-auto">
+          <!-- Slider -->
+          <div id="slider" class="overflow-hidden">
+            <div id="slides" class="flex transition-transform duration-500">
+              <!-- Track 1 -->
+              <div class="w-full flex-shrink-0 p-4">
+                <div
+                  class="bg-blue-50 border border-blue-200 rounded-3xl p-10 shadow-md"
+                >
+                  <h4 class="text-2xl font-semibold text-blue-900 mb-3">
+                    Artificial Intelligence and Intelligent Systems
+                  </h4>
+                  <p class="text-gray-700">
+                    Focuses on the development of intelligent algorithms and
+                    systems capable of learning, reasoning, and making
+                    autonomous decisions for real-world applications.
+                    <br /><br />
+                    <strong>Key Areas:</strong> Machine Learning, Deep Learning,
+                    Natural Language Processing.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Track 2 -->
+              <div class="w-full flex-shrink-0 p-4">
+                <div
+                  class="bg-blue-50 border border-blue-200 rounded-3xl p-10 shadow-md"
+                >
+                  <h4 class="text-2xl font-semibold text-blue-900 mb-3">
+                    Data Science, Analytics and Intelligent Decision Systems
+                  </h4>
+                  <p class="text-gray-700">
+                    Explores advanced methods for extracting meaningful insights
+                    from complex datasets and building data-driven decision
+                    systems across industries.
+                    <br /><br />
+                    <strong>Key Areas:</strong> Big Data Analytics, Data Mining,
+                    Predictive Analytics.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Track 3 -->
+              <div class="w-full flex-shrink-0 p-4">
+                <div
+                  class="bg-blue-50 border border-blue-200 rounded-3xl p-10 shadow-md"
+                >
+                  <h4 class="text-2xl font-semibold text-blue-900 mb-3">
+                    Cyber Security, Networks and Distributed Computing
+                  </h4>
+                  <p class="text-gray-700">
+                    Addresses modern challenges in securing digital
+                    infrastructure, communication networks, and distributed
+                    computing environments.
+                    <br /><br />
+                    <strong>Key Areas:</strong> Network Security, Cryptography,
+                    Cloud Computing.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Track 4 -->
+              <div class="w-full flex-shrink-0 p-4">
+                <div
+                  class="bg-blue-50 border border-blue-200 rounded-3xl p-10 shadow-md"
+                >
+                  <h4 class="text-2xl font-semibold text-blue-900 mb-3">
+                    Internet of Things, Smart Systems and Emerging Technologies
+                  </h4>
+                  <p class="text-gray-700">
+                    Focuses on interconnected smart systems and next-generation
+                    technologies that enable intelligent automation and smart
+                    environments.
+                    <br /><br />
+                    <strong>Key Areas:</strong> Internet of Things (IoT),
+                    Robotics and Automation, Smart Cities.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Track 5 -->
+              <div class="w-full flex-shrink-0 p-4">
+                <div
+                  class="bg-blue-50 border border-blue-200 rounded-3xl p-10 shadow-md"
+                >
+                  <h4 class="text-2xl font-semibold text-blue-900 mb-3">
+                    Intelligent Computing Applications in Healthcare and Society
+                  </h4>
+                  <p class="text-gray-700">
+                    Highlights the application of intelligent computing
+                    solutions to improve healthcare systems and address broader
+                    societal challenges.
+                    <br /><br />
+                    <strong>Key Areas:</strong> AI in Healthcare, Medical Image
+                    Processing, Health Informatics.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Track 6 -->
+              <div class="w-full flex-shrink-0 p-4">
+                <div
+                  class="bg-blue-50 border border-blue-200 rounded-3xl p-10 shadow-md"
+                >
+                  <h4 class="text-2xl font-semibold text-blue-900 mb-3">
+                    Indian Knowledge System(IKS)
+                  </h4>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dots -->
+          <div id="dots" class="flex justify-center gap-3 mt-6"></div>
+        </div>
+
+        <br />
+
+        <a
+          href="call-for-papers"
+          class="inline-block bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+        >
+          More Tracks
+        </a>
+      </div>
+    </section>
+    <!-- Partners Section -->
+    <section class="py-24 bg-gray-200 text-center fade-section">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold mb-6">Our Partners</h2>
+
+        <p
+          class="text-justify text-gray-600 max-w-4xl mx-auto mb-16 text-lg leading-relaxed"
+        >
+          ICICFT-2026 is supported by distinguished academic institutions,
+          research organizations, and professional bodies committed to advancing
+          innovation in intelligent computing and future technologies. These
+          collaborations strengthen the conference’s global outreach, research
+          credibility, and academic impact.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <div
+            class="bg-white p-10 rounded-3xl shadow-md hover:shadow-xl transition"
+          >
+            <img
+              src="assets/images/organising-logo.png"
+              class="mx-auto h-20 mb-4"
+            />
+            <h4 class="text-lg font-semibold text-gray-800">ACM PU, Jaipur</h4>
+            <p class="text-sm text-gray-600 mt-2">
+              The ACM Student Chapter at Poornima University, Jaipur is a dynamic student-led organization dedicated to fostering technical skills and innovation.
+              It encourages excellence in programming, research, and collaborative learning through workshops, events, and competitions.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-10 rounded-3xl shadow-md hover:shadow-xl transition"
+          >
+            <img src="assets/images/rcat_logo.jpeg" class="mx-auto h-20 mb-4" />
+            <h4 class="text-lg font-semibold text-gray-800">RCAT</h4>
+            <p class="text-sm text-gray-600 mt-2">
+              Rajasthan Council for Advanced Training, fostering innovation,
+              skill development, and industry-oriented research initiatives.
+            </p>
+          </div>
+
+          <div
+            class="bg-white p-10 rounded-3xl shadow-md hover:shadow-xl transition"
+          >
+            <img
+              src="assets/images/R&D Cell Poornima.jpeg"
+              class="mx-auto h-20 mb-4"
+            />
+            <h4 class="text-lg font-semibold text-gray-800">
+              R&D Cell Poornima
+            </h4>
+            <p class="text-sm text-gray-600 mt-2">
+              The R&D Cell promotes innovation and a strong research culture at
+              Poornima University. It supports faculty and students in
+              developing new technologies and conducting impactful research.
+            </p>
+          </div>
+        </div>
+        <br />
+        <a
+          href="partners"
+          class="inline-block bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+          >More Parterns</a
+        >
+      </div>
+    </section>
+    <!-- Committee Section  -->
+    <section class="py-24 bg-white text-center fade-section">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-gray-900 mb-8">Committee</h2>
+
+        <p
+          class="text-gray-600 max-w-4xl mx-auto mb-16 text-lg leading-relaxed text-justify"
+        >
+          The success of ICICFT-2026 is guided by an accomplished panel of
+          academic leaders, researchers, and industry experts who bring
+          extensive experience in intelligent computing, data science,
+          cybersecurity, and emerging digital technologies. Their strategic
+          vision, research excellence, and commitment to innovation ensure the
+          conference maintains the highest standards of technical quality,
+          global collaboration, and academic integrity.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Member 1 -->
+          <div
+            class="bg-blue-50 border border-blue-200 rounded-3xl p-8 shadow-md hover:shadow-xl transition"
+          >
+            <h4 class="text-xl font-semibold text-blue-900 mb-2">
+              Dr. Suresh Chandra Padhy
+            </h4>
+            <p>President, PU</p>
+            <p class="text-gray-700">Honorary Patron</p>
+          </div>
+
+          <!-- Member 2 -->
+          <div
+            class="bg-blue-50 border border-blue-200 rounded-3xl p-8 shadow-md hover:shadow-xl transition"
+          >
+            <h4 class="text-xl font-semibold text-blue-900 mb-2">
+              Dr. Manoj Gupta
+            </h4>
+            <p>Pro-President, PU</p>
+            <p class="text-gray-700">Conference Chair</p>
+          </div>
+
+          <!-- Member 3 -->
+          <div
+            class="bg-blue-50 border border-blue-200 rounded-3xl p-8 shadow-md hover:shadow-xl transition"
+          >
+            <h4 class="text-xl font-semibold text-blue-900 mb-2">
+              Prof. (Dr.) Ankush Jain
+            </h4>
+            <p>Dean Academics, PU</p>
+            <p class="text-gray-700">Advisory</p>
+          </div>
+        </div>
+        <br />
+
+        <div class="mt-16">
+          <a
+            href="committee"
+            class="inline-block bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+          >
+            View Full Committee
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-24 bg-gray-200 fade-section">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Left Content -->
+        <div>
+          <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
+
+          <p class="text-justify text-gray-600 mb-8 text-lg leading-relaxed">
+            For inquiries regarding paper submissions, registrations,
+            partnerships, or sponsorship opportunities, please contact the
+            organizing committee. We are committed to providing timely
+            assistance and detailed information.
+          </p>
+
+          <p class="mb-3">
+            <strong>Email:</strong> saurabh.shandilya@poornima.edu.in
+          </p>
+          <p class="mb-3"><strong>Phone:</strong> +91-9887587811</p>
+          <p class="mb-6">
+            <strong>Address:</strong> Poornima University, Jaipur, Rajasthan,
+            India
+          </p>
+
+          <!-- Button properly aligned -->
+          <a
+            href="contact"
+            class="inline-flex items-center gap-2 bg-blue-800 text-white px-8 py-3 rounded-xl hover:bg-blue-700 transition"
+          >
+            📞 Contact Us
+          </a>
+        </div>
+
+        <!-- Right Map -->
+        <div>
+          <iframe
+            src="https://maps.google.com/maps?q=Poornima%20University%20Jaipur%20Rajasthan%20India&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-80 rounded-2xl shadow-lg"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+      // NOW popup exists — trigger it
+      setTimeout(() => {
+        const popup = document.getElementById("conferencePopup");
+        if (popup) popup.classList.add("show");
+      }, 600);
+
+      // Close handlers
+      document.addEventListener("click", function (e) {
+        if (e.target.id === "closePopup" || e.target.id === "closePopupBtn") {
+          document.getElementById("conferencePopup")?.classList.remove("show");
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.getElementById("noticeSlider");
+        const dots = document.querySelectorAll("#noticeDots span");
+        const closeBtn = document.getElementById("closeNotice");
+        const noticeBar = document.getElementById("noticeBar");
+
+        if (!slider) return; // safety
+
+        let index = 0;
+        const total = slider.children.length;
+
+        function updateSlider() {
+          slider.style.transform = `translateX(-${index * 100}%)`;
+
+          dots.forEach((dot) => {
+            dot.classList.remove("opacity-100");
+            dot.classList.add("opacity-40");
+          });
+
+          if (dots[index]) {
+            dots[index].classList.remove("opacity-40");
+            dots[index].classList.add("opacity-100");
+          }
+        }
+
+        setInterval(() => {
+          index = (index + 1) % total;
+          updateSlider();
+        }, 4000);
+
+        if (closeBtn) {
+          closeBtn.addEventListener("click", () => {
+            noticeBar.style.display = "none";
+          });
+        }
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        // Slider (Fix - Per Slider)
+        const sliders = document.querySelectorAll(".slider");
+
+        sliders.forEach((slider) => {
+          const slides = slider.querySelectorAll(".slide");
+          let current = 0;
+
+          if (slides.length > 0) {
+            setInterval(() => {
+              slides[current].classList.remove("opacity-100");
+              slides[current].classList.add("opacity-0");
+
+              current = (current + 1) % slides.length;
+
+              slides[current].classList.remove("opacity-0");
+              slides[current].classList.add("opacity-100");
+            }, 4000);
+          }
+        });
+
+        // Scroll animation
+        const sections = document.querySelectorAll(".fade-section");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+              }
+            });
+          },
+          { threshold: 0.15 },
+        );
+
+        sections.forEach((section) => observer.observe(section));
+      });
+    </script>
+    <script>
+      fetch("components/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          const placeholder = document.getElementById("footer-placeholder");
+          placeholder.innerHTML = data;
+
+          // Small delay so CSS applies first
+          setTimeout(() => {
+            const footer = placeholder.querySelector(".footer");
+            footer.classList.add("show-footer");
+          }, 100);
+        });
+    </script>
+
+    <script src="/assets/js/main.js"></script>
+
+    <script>
+      const slides = document.getElementById("slides");
+      const totalSlides = slides.children.length;
+      const dotsContainer = document.getElementById("dots");
+
+      let index = 0;
+
+      /* create dots */
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement("button");
+        dot.className = "w-3 h-3 rounded-full bg-gray-300";
+        dot.addEventListener("click", () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+      }
+
+      function updateSlider() {
+        slides.style.transform = `translateX(-${index * 100}%)`;
+
+        [...dotsContainer.children].forEach((dot, i) => {
+          dot.classList.toggle("bg-blue-700", i === index);
+          dot.classList.toggle("bg-gray-300", i !== index);
+        });
+      }
+
+      function goToSlide(i) {
+        index = i;
+        updateSlider();
+      }
+
+      // document.getElementById("next").onclick = () => {
+      //   index = (index + 1) % totalSlides;
+      //   updateSlider();
+      // };
+
+      // document.getElementById("prev").onclick = () => {
+      //   index = (index - 1 + totalSlides) % totalSlides;
+      //   updateSlider();
+      // };
+
+      updateSlider();
+    </script>
+    <script>
+      // auto slide every 3 seconds
+      setInterval(() => {
+        index = (index + 1) % totalSlides;
+        updateSlider();
+      }, 3000);
+    </script>
+  </body>
+</html>

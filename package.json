@@ -1,0 +1,22 @@
+{
+  "name": "icscis-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --watch-path=./public src/server.js && tailwindcss -i ./src/input.css -o ./public/assets/css/output.css --watch",
+    "build": "rm -rf dist && mkdir dist && tailwindcss -i ./src/input.css -o ./dist/assets/css/output.css --minify && cp -r public/* dist/ && cp src/server.js dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
