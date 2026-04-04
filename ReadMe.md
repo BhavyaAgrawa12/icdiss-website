@@ -1,6 +1,6 @@
 ## 📌 Overview
 
-The ICICFT website provides:
+The ICDISS website provides:
 
 - Conference information
 - Advisory and organizing committees
@@ -25,7 +25,7 @@ The project is designed as a fast, maintainable, and easily deployable static we
 ## 📂 Project Structure
 ```
 
-ICICFT-Website/
+ICDISS-Website/
 │
 ├── index.html # Main landing page
 ├── *.html # Other website pages
@@ -62,9 +62,9 @@ npm -v
 ### 1️⃣ Clone the Repository
 
 
-git clone https://github.com/BhavyaAgrawa12/icscis-website.git
+git clone https://github.com/BhavyaAgrawa12/icdiss-website.git
 
-cd icscis-website
+cd icdiss-website
 
 
 ### 2️⃣ Install Dependencies
@@ -148,6 +148,4 @@ This project is intended for academic and conference use.
 
 ## 📬 Contact
 
-For website-related queries, please contact the ICSCIS Organizing Committee.
-# icdiss-website
-# icdiss-website
+For website-related queries, please contact the ICDISS Organizing Committee.
